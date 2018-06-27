@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:src="@drawable/logo_eat_it"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <EditText
+        android:id="@+id/edTenDangNhapDN"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:hint="@string/tendangnhap"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_logo" />
+
+    <EditText
+        android:id="@+id/edMatKhauDN"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_50"
+        android:hint="@string/matkhau"
+        android:password="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edTenDangNhapDN"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnDongYDN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        app:fb_borderColor="#FFFFFF"
+        app:fb_borderWidth="@dimen/dp_1"
+        app:fb_defaultColor="@color/colorAccent"
+        app:fb_focusColor="@color/colorGray"
+        app:fb_radius="@dimen/dp_30"
+        app:fb_text="@string/dangnhap"
+        app:fb_textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edMatKhauDN"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnDangKyDN"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        app:fb_borderColor="@android:color/white"
+        app:fb_borderWidth="1dp"
+        app:fb_defaultColor="@color/colorAccent"
+        app:fb_focusColor="@color/colorGray"
+        app:fb_radius="@dimen/dp_30"
+        app:fb_text="@string/dangky"
+        app:fb_textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edMatKhauDN"
+        app:layout_constraintVertical_bias="0.2" />
+
+</android.support.constraint.ConstraintLayout>

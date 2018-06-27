@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itHome"
+        android:title="@string/trangchu"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/itMenu"
+        android:title="@string/thucdon"
+        android:icon="@drawable/ic_order"/>
+    <item
+        android:id="@+id/itMember"
+        android:title="@string/nhanvien"
+        android:icon="@drawable/ic_person"/>
+    <item
+        android:id="@+id/itLogout"
+        android:title="Đăng xuất"
+        android:icon="@drawable/ic_lockout"/>
+
+</menu>

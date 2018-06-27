@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray">
+
+    <ImageView
+        android:id="@+id/imHinhThucDon"
+        style="@style/ImgStyle"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:scaleType="center"
+        android:src="@drawable/ic_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        />
+
+    <EditText
+        android:id="@+id/edThemTenMonAn"
+        style="@style/edittext_themmon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_50"
+        android:hint="@string/tenmonan"
+        android:padding="@dimen/dp_10"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imHinhThucDon"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/edThemGiaTien"
+        style="@style/edittext_themmon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_50"
+        android:hint="@string/giatien"
+        android:numeric="integer"
+        android:padding="@dimen/dp_10"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edThemTenMonAn"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <LinearLayout
+        android:id="@+id/linear_them_mon"
+        style="@style/edittext_themmon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_50"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edThemGiaTien"
+        app:layout_constraintVertical_bias="0.08">
+
+        <ImageButton
+            android:id="@+id/imThemLoaiThucDon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/dp_5"
+            android:src="@drawable/ic_themmon" />
+
+        <Spinner
+            android:id="@+id/spinLoaiMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:popupBackground="@android:color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_them_mon"
+        app:layout_constraintVertical_bias="0.5">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnDongYThemMonAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            app:fb_borderColor="@android:color/black"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@android:color/transparent"
+            app:fb_focusColor="@color/colorGray"
+            app:fb_iconPosition="left"
+            app:fb_radius="30dp"
+            app:fb_text="@string/dongy"
+            app:fb_textColor="@android:color/black" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnThoatThemMonAn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_weight="1"
+            android:padding="@dimen/dp_10"
+            app:fb_borderColor="@android:color/black"
+            app:fb_borderWidth="1dp"
+            app:fb_defaultColor="@android:color/transparent"
+            app:fb_focusColor="@color/colorGray"
+            app:fb_iconPosition="left"
+            app:fb_radius="30dp"
+            app:fb_text="@string/thoat"
+            app:fb_textColor="@android:color/black" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

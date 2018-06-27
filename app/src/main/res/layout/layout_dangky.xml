@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_register">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:src="@drawable/logo_eat_it"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+
+    <EditText
+        android:id="@+id/edTenDangNhapDK"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:hint="@string/tendangnhap"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintBottom_toTopOf="@id/edMatKhauDK"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <EditText
+        android:id="@+id/edMatKhauDK"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:hint="@string/matkhau"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edTenDangNhapDK"
+        app:layout_constraintBottom_toTopOf="@id/edNgaySinhDK"
+        app:layout_constraintVertical_bias="0.05"/>
+
+    <EditText
+        android:id="@+id/edNgaySinhDK"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:hint="@string/ngaysinh"
+        android:singleLine="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@id/spinQuyen"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edMatKhauDK" />
+
+    <Spinner
+        android:id="@+id/spinQuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toTopOf="@id/edSDT"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edNgaySinhDK" />
+
+    <EditText
+        android:id="@+id/edSDT"
+        style="@style/EdittextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:hint="@string/sdt"
+        android:singleLine="true"
+        android:maxLength="11"
+        android:numeric="integer"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@id/btnDongYDK"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinQuyen" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btnDongYDK"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        app:fb_borderColor="#FFFFFF"
+        app:fb_borderWidth="1dp"
+        app:fb_defaultColor="@color/colorAccent"
+        app:fb_focusColor="@color/colorGray"
+        app:fb_radius="@dimen/dp_30"
+        app:fb_text="@string/dangky"
+        app:fb_textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edSDT"
+        app:layout_constraintVertical_bias="0.5"/>
+
+</android.support.constraint.ConstraintLayout>

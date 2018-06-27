@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tenmonan"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/soluong"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/giatien"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gvThanhToan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:numColumns="1">
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="@string/tongtien"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_margin="@dimen/dp_10"
+            android:layout_weight="0.8"
+            app:fb_defaultColor="@color/colorAccent"
+            app:fb_focusColor="@color/colorGray"
+            app:fb_radius="@dimen/dp_10"
+            app:fb_textColor="@android:color/black"
+            android:text="@string/thanhtoan" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/btnThoatThanhToan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            app:fb_defaultColor="@color/color_red"
+            app:fb_focusColor="@color/colorGray"
+            app:fb_radius="@dimen/dp_10"
+            app:fb_textColor="@android:color/black"
+            android:text="@string/thoat" />
+
+    </LinearLayout>
+
+</LinearLayout>

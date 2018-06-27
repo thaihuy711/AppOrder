@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thaihuy.order">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ManHinhChoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".DangKyActivity">
+
+        </activity>
+        <activity android:name=".DangNhapActivity">
+
+        </activity>
+
+        <activity android:name=".TrangChuActivity">
+
+        </activity>
+
+        <activity
+            android:name=".ThemBanAnActivity"
+            android:label="@string/thembanan"
+            android:theme="@style/PopUpActivity">
+
+        </activity>
+
+        <activity
+            android:name=".ThemLoaiThucDonActivity"
+            android:label="@string/loaithucdon"
+            android:theme="@style/PopUpActivity">
+
+        </activity>
+
+        <activity
+            android:name=".SoLuongActivity"
+            android:label="@string/soluong"
+            android:theme="@style/PopUpActivity">
+
+        </activity>
+
+        <activity
+            android:name=".ThanhToanActivity"
+            android:label="@string/thanhtoan"
+            android:theme="@style/PopUpActivity">
+
+        </activity>
+
+        <activity
+            android:name=".SuaBanAnActivity"
+            android:label="@string/suabanan"
+            android:theme="@style/PopUpActivity">
+
+        </activity>
+        <activity android:name=".SuaMonAnActivity"
+            android:label="@string/capnhatmonan"
+            android:theme="@style/PopUpActivity">
+        </activity>
+    </application>
+
+</manifest>
